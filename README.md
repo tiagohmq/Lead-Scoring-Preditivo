@@ -1,2 +1,7 @@
-# Lead-Scoring-Preditivo
-Projeto de lead scoring com Machine Learning, avaliando Regressão Logística, Random Forest e XGBoost. O modelo final foi otimizado para maximizar recall da classe positiva, alcançando 78%, reduzindo a perda de oportunidades e apoiando a priorização eficiente do time comercial.
+Este repositório apresenta o desenvolvimento de um modelo de lead scoring utilizando técnicas de Machine Learning, com foco em apoiar a priorização de leads e aumentar a eficiência do time comercial. O projeto cobre todas as etapas do pipeline de dados, desde a análise exploratória e pré-processamento até a modelagem, avaliação e interpretação dos resultados.
+
+Foram avaliados diferentes algoritmos, incluindo Regressão Logística, Random Forest e XGBoost, sendo este último selecionado como modelo final após otimização de hiperparâmetros com GridSearchCV. O modelo XGBoost apresentou o melhor desempenho em termos de AUC-ROC, além de maior capacidade de generalização em dados não vistos.
+
+Um ponto central do projeto foi a escolha das métricas de avaliação mais adequadas ao contexto de negócio. Em vez de priorizar exclusivamente a acurácia, o modelo foi ajustado para maximizar o recall da classe positiva, reduzindo a perda de oportunidades ao longo do funil de vendas. Após o ajuste do threshold de decisão, o modelo final alcançou um recall de aproximadamente 78%, o que significa que a maior parte dos leads com real potencial de conversão é corretamente identificada e encaminhada ao time comercial.
+
+Além da performance preditiva, o projeto também explora a interpretabilidade do modelo, por meio da análise de importância das variáveis, oferecendo insights sobre os principais fatores que influenciam a conversão de leads. Dessa forma, a solução proposta não apenas melhora a priorização comercial, mas também contribui para decisões estratégicas nas áreas de marketing e vendas.
